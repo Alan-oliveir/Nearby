@@ -1,0 +1,44 @@
+{
+  "name": "pocket-mobile-monorepo",
+  "version": "2.0.0",
+  "description": "Monorepo do projeto Nearby App - NLW Pocket Mobile com melhorias",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run api:dev\" \"npm run mobile:dev\"",
+    "api:dev": "cd api && npm start",
+    "api:install": "cd api && npm install",
+    "api:setup": "cd api && npm install && npx prisma generate && npx prisma db seed",
+    "api:get-ip": "cd api && npm run get-ip",
+    "mobile:dev": "cd mobile && npm start",
+    "mobile:install": "cd mobile && npm install",
+    "mobile:android": "cd mobile && npm run android",
+    "mobile:ios": "cd mobile && npm run ios",
+    "install-all": "npm run api:install && npm run mobile:install",
+    "setup": "npm run install-all && npm run api:setup",
+    "lint": "npm run api:lint && npm run mobile:lint",
+    "api:lint": "cd api && npm run lint",
+    "mobile:lint": "cd mobile && npm run lint"
+  },
+  "workspaces": [
+    "api",
+    "mobile"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "nodejs",
+    "typescript",
+    "monorepo",
+    "nearby",
+    "nlw"
+  ],
+  "author": "Alan Oliveira",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alan-oliveir/Nearby-react_native.git"
+  }
+}
