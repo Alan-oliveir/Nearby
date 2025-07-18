@@ -280,7 +280,3 @@ Esta não é apenas uma cópia do projeto NLW, mas uma **versão aprimorada** co
 ### 📋 **Changelog**
 
 Para ver todas as mudanças e melhorias implementadas, consulte o arquivo [CHANGELOG.md](./CHANGELOG.md).
-
----
-
-⚡ **Status Atual**: Projeto otimizado, seguro e pronto para produção!
